@@ -4,5 +4,5 @@ except ImportError:
     import Image
 import pytesseract
 
-print(pytesseract.image_to_string(Image.open('image.jfif')))
+print(pytesseract.image_to_string(Image.open('image.jfif')).encode('utf-8'))
 
